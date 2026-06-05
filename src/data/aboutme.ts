@@ -27,12 +27,12 @@ export const aboutMe: AboutMe = {
   imageUrl: "", // Optional: add your profile image URL here
   googleScholarUrl: "https://scholar.google.com/citations?user=MD2uJXYAAAAJ&hl=en&authuser=1",
   githubUsername: "hazel260802",
-  linkedinUsername: "trang-lê-9618961ba",
+  linkedinUsername: "huyentrang-le",
   cvUrl: "https://drive.google.com/file/d/1Xo9n8sHqj2l3m5n6o7p8q9r0s1t2u3v/view?usp=sharing",
   blogUrl: "https://hazel-blog.vercel.app/", 
   twitterUsername: "hazel20802", // Optional
   institutionUrl: "https://www.univ-evry.fr/accueil.html",
   altName: "Hazel Le", // Optional: an alternative name or nickname
   funDescription: "I enjoy exploring the intersection of technology and healthcare, and I'm passionate about leveraging blockchain for secure data sharing. As a researcher, I thrive on solving complex problems and contributing to advancements in privacy-preserving technologies, with the insights from my personal blogs.",
-  secretDescription: "I like puppies, cats and sexy dance and singing. I also have a secret talent for cooking delicious meals and making people laugh with my terrible jokes. If you want to know more about me, just ask! 😉",
+  // secretDescription: "I like puppies, cats and sexy dance and singing. I also have a secret talent for cooking delicious meals and making people laugh with my terrible jokes. If you want to know more about me, just ask! 😉",
 };

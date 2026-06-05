@@ -13,6 +13,18 @@ export const newsData: News[] = [
     link: "https://www.facebook.com/photo/?fbid=2640232599461776&set=a.371740252977700",
   },
   {
+    date: "Dec 2023",
+    title: "Outstanding Student Nomination in EBA (Ecosystem-Based Adaptation) Project",
+    description: "Participated in Ecosystem-Based Adaptation (EBA) projects aimed at strengthening climate change resilience through the sustainable use of ecosystem services. The projects emphasized nature-based solutions and sustainable practices to support vulnerable communities and protect ecological systems. I have also been recognized as the only outstanding student nominated and accepted for the academic exchange program between Hanoi University of Science and Technology (HUST) and the University of Tokyo.",
+    link: "https://www.linkedin.com/in/huyentrang-le/overlay/Honor/1465346784/treasury/?profileId=ACoAADMIRtkBpylS32z_gHIFHjO7teGONOlT-gA",
+  },
+  {
+    date: "June 2023",
+    title: "BK Fintech Student Representative in Vietnam-Korea Collaboration & Hub Network",
+    description: "epresented the Finance & Technology Student Club of HUST alongside the Board of Directors of the Student Innovation and Entrepreneurship Center at HUST at the Korea – Vietnam Entrepreneurship Education Forum 2024, contributing to initiatives promoting innovation and entrepreneurship. Furthermore, I have been selected as a representative of the HUST Finance & Technology Student Club to join the Youth Union Hub Network for Entrepreneurship, Innovation, and Digital Transformation, with a year of active engagement recognized for pioneering activities in technology and the digital economy.",
+    link: "https://hust.edu.vn/vi/news/khoa-hoc-cong-nghe-dmst/bach-khoa-ha-noi-tien-phong-trong-cong-nghe-va-kinh-te-so-654873.html",
+  },
+  {
     date: "Jan 2023",
     title: "Commendation for Active Contribution to the HUST Student Community",
     description: "Received two commendations from the Student Affairs Department of Hanoi University of Science and Technology (HUST) for active contribution to the student community. This recognition reflects my dedication to fostering a positive and engaging environment for students, as well as my involvement in various extracurricular activities and initiatives that enhance the overall student experience at HUST.",
@@ -39,7 +51,7 @@ export const newsData: News[] = [
   {
     date: "Jan 2021",
     title: "Coders & Philosophers Web-based Creativity Competition",
-    description: "",
-    link: "",
+    description: "Online creativity competition organized by Coders & Philosophers, a community focused on fostering creativity and innovation in the tech industry. The competition encourages participants to develop innovative projects that combine coding skills with philosophical thinking, promoting interdisciplinary approaches to problem-solving and creative expression in technology. Our group creates food selection web application that helps users make informed decisions about their meals based on nutritional information, dietary preferences, and health goals.",
+    link: "https://github.com/hazel260802/foodtech",
   }
 ];
