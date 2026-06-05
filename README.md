@@ -1,12 +1,9 @@
-# research-website-template
+# Personal Academic Research Portfolio 
 
-This is a React + Next.js template meant for research websites. See a [demo of the template here](https://tovacinni.github.io/research-website-template/). My own [personal website](https://tovacinni.github.io) is also built with the same template.
+My research portfolio is deployed and managed in this webpage in order to explain academic pursuit and further scientific contribution (workshops, hackathons, articles). Our template is mainly based on a React + Next.js template meant for research websites, with a [demo of the template here](https://tovacinni.github.io/research-website-template/). My own [personal website](https://tovacinni.github.io) is also built in the focus of blockchain full researcher target with the future teaching work after the PhD pursuit.
 
-In practice it could probably be used by anyone.
-
-It is meant to be customizeable, all through modifying the `src/data` - which have arrays of objects that are used to generate the website.
-
-For example, `src/data/publication.ts` contains an array like:
+> [!NOTE]
+> Our customizeable websites are implemented through 5 main sections (general information, research contribution, scientific engagement, teaching materials, contact), all my work contained in the `src/data` folder with the teaching will be updated after my PhD research. For example, `src/data/publication.ts` contains an array like:
 
 ```typescript
 export const publicationData: Publication[] = [
@@ -20,31 +17,6 @@ export const publicationData: Publication[] = [
   },
 ];
 ```
-
-To update your website, you can simply add objects to the array.
-
-The schemas are defined in the same files, and many fields are optional for flexibility:
-
-```typescript
-export interface Publication {
-  year: string;
-  conference: string;
-  title: string;
-  authors: string;
-  paperUrl?: string;
-  codeUrl?: string;
-  bibtex?: string;
-  tldr?: string;
-  imageUrl?: string;
-  award?: string;
-}
-```
-
-Any field with a `?` at the end is optional. Filling them in will create the UI components corresponding to them automatically.
-
-You can also change the order of the sections in `src/data/section-order.ts`, and if you want full customization you can just edit the React components in `src/components`.
-
-This project was birthed from annoyance over HTML + CSS templates- such as the very popular [Jon Barron template](https://github.com/jonbarron/website). The Jon Barron template is amazing because it is simple & complete which is why it's so popular- but over time, maintenance becomes difficult from the amount of duplicate code it creates (the Jon Barron index is now over 4000 lines of code). This is meant to be a much more minimal (to maintain) alternative (and was a good way to spend a few hours to build over holiday weekend).
 
 ## Prerequisites
 
@@ -73,7 +45,7 @@ npm --version
    Inside the repository, run:
 
    ```bash
-   npm install
+   pnpm install
    ```
 
 ## Running the Application
@@ -81,7 +53,7 @@ npm --version
 1. To start the development server, run (in the repository directory):
 
    ```bash
-   npm run dev
+   pnpm run dev
    ```
 
 2. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
@@ -100,16 +72,3 @@ npm --version
 
 Your site should now be live at `https://[your-github-username].github.io/`.
 
-## Deploying to your own domain
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/) from the creators of Next.js.
-
-1. Create a [Vercel account](https://vercel.com/signup) if you haven't already
-2. Push your code to a Git repository (GitHub, GitLab, or Bitbucket)
-3. Import your repository on Vercel
-4. Vercel will automatically detect Next.js and configure the build settings
-5. Click "Deploy"
-
-## Contributing
-
-Feel free to drop a pull request whenever!

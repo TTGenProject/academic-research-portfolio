@@ -18,22 +18,21 @@ export interface AboutMe {
 }
 
 export const aboutMe: AboutMe = {
-  name: "Jane R. Smith",
-  title: "Ph.D. Candidate",
-  institution: "Stanford University",
-  // Note that links work in the description
+  name: "LE Huyen-Trang",
+  title: "Master 2 Student & Researcher",
+  institution: "Paris-Saclay University",
   description:
-    "I'm a final-year <a href='https://www.stanford.edu'>PhD candidate</a> working at the intersection of causal inference and machine learning. My research focuses on developing robust, interpretable systems that can reason about cause and effect in complex environments.",
-  email: "______@stanford.edu",
-  imageUrl:
-    "https://images.unsplash.com/photo-1581481615985-ba4775734a9b?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  googleScholarUrl: "https://scholar.google.com/citations?user=bWtMl_MAAAAJ",
-  githubUsername: "janesmith",
-  linkedinUsername: "janesmith",
-  twitterUsername: "janesmith",
-  blogUrl: "https://",
-  cvUrl: "https://",
-  institutionUrl: "https://www.stanford.edu",
-  // altName: "",
-  // secretDescription: "I like dogs.",
+    "I'm a Master 2 student at <a href='https://www.univ-evry.fr/accueil.html'>Paris-Saclay University</a> specializing in Computer and Network Systems. My research focuses on secure healthcare data sharing, blockchain-based genomic data management, and privacy-preserving systems using cryptographic techniques including Zero-Knowledge Proofs. I work at the <a href='https://www.ibisc.univ-evry.fr/'>IBISC Laboratory</a> under Prof. Nazim Agoulmine, developing decentralized solutions for medical IoT devices and trustworthy data sharing ecosystems.",
+  email: "lehuyentrang260802@gmail.com",
+  imageUrl: "", // Optional: add your profile image URL here
+  googleScholarUrl: "https://scholar.google.com/citations?user=MD2uJXYAAAAJ&hl=en&authuser=1",
+  githubUsername: "hazel260802",
+  linkedinUsername: "trang-lê-9618961ba",
+  cvUrl: "https://drive.google.com/file/d/1Xo9n8sHqj2l3m5n6o7p8q9r0s1t2u3v/view?usp=sharing",
+  blogUrl: "https://hazel-blog.vercel.app/", 
+  twitterUsername: "hazel20802", // Optional
+  institutionUrl: "https://www.univ-evry.fr/accueil.html",
+  altName: "Hazel Le", // Optional: an alternative name or nickname
+  funDescription: "I enjoy exploring the intersection of technology and healthcare, and I'm passionate about leveraging blockchain for secure data sharing. As a researcher, I thrive on solving complex problems and contributing to advancements in privacy-preserving technologies, with the insights from my personal blogs.",
+  secretDescription: "I like puppies, cats and sexy dance and singing. I also have a secret talent for cooking delicious meals and making people laugh with my terrible jokes. If you want to know more about me, just ask! 😉",
 };

@@ -8,19 +8,26 @@ export interface Education {
 }
 
 export const educationData: Education[] = [
-  // If you don't want to show education, just make the array empty.
   {
-    year: "2021—Present",
-    institution: "Stanford University",
-    degree: "Ph.D. in Computer Science",
-    advisor: "Prof. Sarah Johnson",
+    year: "2025—Present",
+    institution: "Paris-Saclay University",
+    degree: "Master 2 in Computer and Network Systems (CNS-SR)",
+    advisor: "Prof. Nazim Agoulmine",
+    thesis: "Blockchain-based Trustworthy Genomic Data Sharing Using Zero-Knowledge Proof for Improving Consumer Identity Protection.",
+    thesisUrl: "https://plmlatex.math.cnrs.fr/read/wkpvtpthqyvv",
   },
   {
-    year: "2017—2021",
-    institution: "Massachusetts Institute of Technology",
-    degree: "B.S. in Computer Science and Mathematics",
-    thesis: "Algorithmic Approaches to Causal Discovery",
-    // Optional links to thesis
-    // thesisUrl: "https://dspace.mit.edu/handle/1721.1/149111"
+    year: "2020—2024",
+    institution: "Hanoi University of Science and Technology (HUST)",
+    degree: "Computer Science Bachelor Degree in PFIEV Vietnam-France Engineering Program (IT-EP)",
+    advisor: "Prof. Hai-Anh Tran",
+    thesis: "Cloud-Edge Server Selection Optimization using Deep Reinforcement Learning in the context of Software-Defined Networking Routing Optimization.",
+    thesisUrl: "https://drive.google.com/file/d/1e5LdUX-AlO5fo7LHsCDCb7R0pedUBUl7/view?usp=sharing",
+  },
+  {
+    year: "2017—2020",
+    institution: "Hanoi-Amsterdam High School for the Gifted",
+    degree: "High School Diploma in Information Technology",
+    advisor: "Prof. Nam-Phuong Truong",
   },
 ];

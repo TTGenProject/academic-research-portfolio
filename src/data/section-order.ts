@@ -12,4 +12,4 @@ export const sectionOrder = [
   Section.Publication,
   Section.Experience,
   Section.Portfolio,
-];
+]; // Customize section order by rearranging this array

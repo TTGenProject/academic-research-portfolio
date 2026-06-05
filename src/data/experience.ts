@@ -10,21 +10,30 @@ export interface Experience {
 
 export const experienceData: Experience[] = [
   {
-    date: "Summer 2023",
-    title: "Research Intern",
-    company: "DeepMind",
+    date: "09/2025–Present",
+    title: "Master's Thesis Researcher",
+    company: "IBISC Laboratory, Université d'Évry Paris-Saclay",
     description:
-      "Developed novel algorithms for causal structure learning in reinforcement learning settings",
-    advisor: "Peter Wang",
-    companyUrl: "https://deepmind.com",
+      "Conducting in-depth analysis of secure genomic data sharing within the COSMO team. Developing trust-based solutions targeting IEEE Journal 2026 submission.",
+    advisor: "Prof. Nazim Agoulmine",
+    companyUrl: "https://www.ibisc.univ-evry.fr/",
   },
   {
-    date: "Summer 2022",
-    title: "Research Intern",
-    company: "Google Research",
+    date: "12/2025–Present",
+    title: "D4Gen Hackathon Researcher",
+    company: "IBISC Laboratory",
     description:
-      "Worked on improving robustness of large language models to distribution shifts",
-    manager: "Elise Brown",
-    companyUrl: "https://google.com",
+      "Designing secure EHR data collection infrastructure with medical IoT devices and blockchain-based transmission systems incorporating zero-knowledge contracts.",
+    advisor: "Dr. Adnan Imeri, Prof. Nazim Agoulmine",
+    companyUrl: "https://www.ibisc.univ-evry.fr/",
+  },
+  {
+    date: "05/2025–08/2025",
+    title: "Summer Research Intern",
+    company: "Faculty of Engineering, Porto University",
+    description:
+      "Developed adaptive privacy-preserving system for multi-modal transportation trajectories. Research presented at JDSE 2025 conference.",
+    advisor: "Dr. Mariana Cunha, Prof. João P. Vilela",
+    companyUrl: "https://www.fe.up.pt/",
   },
 ];
