@@ -19,10 +19,10 @@ export function ProfileSection({ aboutMe }: ProfileSectionProps) {
   }
 
   return (
-    <div className="md:sticky top-12 flex flex-row-reverse md:flex-col gap-4 md:space-y-8">
+    <div className="space-y-8">
       {aboutMe.imageUrl && (
-        <div className="w-1/3 md:w-full flex-shrink-0">
-          <div className="relative max-h-[45vh] md:w-[65%] aspect-[3/4]">
+        <div className="w-full">
+          <div className="relative max-h-[45vh] md:w-[90%] aspect-[3/4]">
             <Image
               src={aboutMe.imageUrl}
               alt={aboutMe.name}
@@ -33,7 +33,7 @@ export function ProfileSection({ aboutMe }: ProfileSectionProps) {
           </div>
         </div>
       )}
-      <div className="w-2/3 md:w-full">
+      <div className="w-full">
         <h1 className="font-serif text-3xl font-light tracking-wide mb-3">
           {aboutMe.name}
         </h1>
@@ -48,7 +48,7 @@ export function ProfileSection({ aboutMe }: ProfileSectionProps) {
           {aboutMe.institutionUrl ? (
             <a
               href={aboutMe.institutionUrl}
-              className="hover:text-zinc-900 transition-colors duration-300"
+              className="hover:text-zinc-900 transition-colors duration-300 break-words"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -88,70 +88,69 @@ export function ProfileSection({ aboutMe }: ProfileSectionProps) {
             </a>
           )}
         </div>
-        <div className="space-y-2">
-          <a
-            href={`mailto:${aboutMe.email}`}
-            className="inline-flex items-center gap-2 text-sm text-zinc-600 hover:text-zinc-900 transition-colors"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Mail size={14} />
-            {aboutMe.email}
-          </a>
+        <div className="space-y-2.5">
+          <div>
+            <a
+              href={`mailto:${aboutMe.email}`}
+              className="flex items-center gap-2 text-xs text-zinc-600 hover:text-zinc-900 transition-colors"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Mail size={14} className="flex-shrink-0" />
+              <span className="break-words">{aboutMe.email}</span>
+            </a>
+          </div>
           {aboutMe.googleScholarUrl && (
-            <>
-              <br />
+            <div>
               <a
                 href={aboutMe.googleScholarUrl}
-                className="inline-flex items-center gap-2 text-sm text-zinc-600 hover:text-zinc-900 transition-colors"
+                className="flex items-center gap-2 text-xs text-zinc-600 hover:text-zinc-900 transition-colors"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <GraduationCap size={14} />
-                Google Scholar
+                <GraduationCap size={14} className="flex-shrink-0" />
+                <span>Google Scholar</span>
               </a>
-            </>
+            </div>
           )}
           {aboutMe.twitterUsername && (
-            <>
-              <br />
+            <div>
               <a
                 href={`https://twitter.com/${aboutMe.twitterUsername}`}
-                className="inline-flex items-center gap-2 text-sm text-zinc-600 hover:text-zinc-900 transition-colors"
+                className="flex items-center gap-2 text-xs text-zinc-600 hover:text-zinc-900 transition-colors"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Twitter size={14} />@{aboutMe.twitterUsername}
+                <Twitter size={14} className="flex-shrink-0" />
+                <span>@{aboutMe.twitterUsername}</span>
               </a>
-            </>
+            </div>
           )}
           {aboutMe.githubUsername && (
-            <>
-              <br />
+            <div>
               <a
                 href={`https://github.com/${aboutMe.githubUsername}`}
-                className="inline-flex items-center gap-2 text-sm text-zinc-600 hover:text-zinc-900 transition-colors"
+                className="flex items-center gap-2 text-xs text-zinc-600 hover:text-zinc-900 transition-colors"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Github size={14} />
-                github.com/{aboutMe.githubUsername}
+                <Github size={14} className="flex-shrink-0" />
+                <span className="break-words">github.com/{aboutMe.githubUsername}</span>
               </a>
-            </>
+            </div>
           )}
           {aboutMe.linkedinUsername && (
-            <>
-              <br />
+            <div>
               <a
                 href={`https://www.linkedin.com/in/${aboutMe.linkedinUsername}`}
-                className="inline-flex items-center gap-2 text-sm text-zinc-600 hover:text-zinc-900 transition-colors"
+                className="flex items-center gap-2 text-xs text-zinc-600 hover:text-zinc-900 transition-colors"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Linkedin size={14} />
-                linkedin.com/in/{aboutMe.linkedinUsername}
+                <Linkedin size={14} className="flex-shrink-0" />
+                <span className="break-words">linkedin.com/in/{aboutMe.linkedinUsername}</span>
               </a>
-            </>
+            </div>
           )}
         </div>
       </div>

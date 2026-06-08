@@ -4,6 +4,8 @@ export interface AboutMe {
   institution: string;
   description: string;
   email: string;
+  phone?: string;
+  workAddress?: string;
   imageUrl?: string;
   blogUrl?: string;
   cvUrl?: string;
@@ -24,7 +26,9 @@ export const aboutMe: AboutMe = {
   description:
     "I'm a Master 2 student at <a href='https://www.univ-evry.fr/accueil.html'>Paris-Saclay University</a> specializing in Computer and Network Systems. My research focuses on secure healthcare data sharing, blockchain-based genomic data management, and privacy-preserving systems using cryptographic techniques including Zero-Knowledge Proofs. I work at the <a href='https://www.ibisc.univ-evry.fr/'>IBISC Laboratory</a> under Prof. Nazim Agoulmine, developing decentralized solutions for medical IoT devices and trustworthy data sharing ecosystems.",
   email: "lehuyentrang260802@gmail.com",
-  imageUrl: "", // Optional: add your profile image URL here
+  phone: "+84 (0)3 79 44 81 20",
+  workAddress: "IBGBI, Université Évry Paris-Saclay, 23, Boulevard de France, 91034 – Évry",
+  imageUrl: "/ava.jpg", 
   googleScholarUrl: "https://scholar.google.com/citations?user=MD2uJXYAAAAJ&hl=en&authuser=1",
   githubUsername: "hazel260802",
   linkedinUsername: "huyentrang-le",
