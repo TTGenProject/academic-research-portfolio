@@ -17,12 +17,17 @@ export function ProfileSection({ aboutMe }: ProfileSectionProps) {
     return null;
   }
 
+  // Construct image URL with basePath for public assets
+  const imageUrl = aboutMe.imageUrl 
+    ? `${process.env.NEXT_PUBLIC_BASE_PATH || ''}${aboutMe.imageUrl}`
+    : null;
+
   return (
     <div className="space-y-8">
-      {aboutMe.imageUrl && (
+      {imageUrl && (
         <div className="w-full">
           <img
-            src={aboutMe.imageUrl}
+            src={imageUrl}
             alt={aboutMe.name}
             className="w-full max-w-xs h-auto rounded-xl object-cover"
           />
