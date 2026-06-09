@@ -22,13 +22,14 @@ export function ProfileSection({ aboutMe }: ProfileSectionProps) {
     <div className="space-y-8">
       {aboutMe.imageUrl && (
         <div className="w-full">
-          <div className="relative max-h-[45vh] md:w-[90%] aspect-[3/4]">
+          <div className="relative w-full max-w-xs">
             <Image
               src={aboutMe.imageUrl}
               alt={aboutMe.name}
-              fill
+              width={300}
+              height={400}
               priority
-              className="object-cover rounded-xl"
+              className="w-full h-auto rounded-xl object-cover"
             />
           </div>
         </div>
