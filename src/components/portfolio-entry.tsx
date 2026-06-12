@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { ArrowUpRight } from "lucide-react";
 import { Portfolio } from "@/data/portfolio";
-import avatarImage from '@/public/ava.jpg'
+import avatarImage from '@/app/ava.jpg'
 
 export function PortfolioEntry({ portfolio }: { portfolio: Portfolio }) {
   return (
