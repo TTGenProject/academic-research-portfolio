@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { ArrowUpRight } from "lucide-react";
 import { Portfolio } from "@/data/portfolio";
+import avatarImage from '@/public/ava.jpg'
 
 export function PortfolioEntry({ portfolio }: { portfolio: Portfolio }) {
   return (
@@ -8,7 +9,7 @@ export function PortfolioEntry({ portfolio }: { portfolio: Portfolio }) {
       {portfolio.imageUrl && (
         <div className="w-1/4 min-w-[160px] relative">
           <Image
-            src={portfolio.imageUrl}
+            src={portfolio.imageUrl || avatarImage}
             alt={portfolio.title}
             width={160}
             height={200}
