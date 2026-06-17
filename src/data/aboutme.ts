@@ -7,7 +7,6 @@ export interface AboutMe {
   phone?: string;
   workAddress?: string;
   imageUrl?: string;
-  imageDownloadUrl?: string; // Link to download or view full resolution image
   blogUrl?: string;
   cvUrl?: string;
   googleScholarUrl?: string;
@@ -30,7 +29,6 @@ export const aboutMe: AboutMe = {
   phone: "+84 (0)3 79 44 81 20",
   workAddress: "IBGBI, Université Évry Paris-Saclay, 23, Boulevard de France, 91034 – Évry",
   imageUrl: "/ava.jpg",
-  imageDownloadUrl: "/ava.jpg", // Set to download or full-res image URL
   googleScholarUrl: "https://scholar.google.com/citations?user=MD2uJXYAAAAJ&hl=en&authuser=1",
   githubUsername: "hazel260802",
   linkedinUsername: "huyentrang-le",
@@ -38,7 +36,7 @@ export const aboutMe: AboutMe = {
   blogUrl: "https://hazel-blog.vercel.app/", 
   twitterUsername: "hazel20802", // Optional
   institutionUrl: "https://www.univ-evry.fr/accueil.html",
-  altName: "Hazel Le", // Optional: an alternative name or nickname
+  altName: "Hazel", // Optional: an alternative name or nickname
   funDescription: "I enjoy exploring the intersection of technology and healthcare, and I'm passionate about leveraging blockchain for secure data sharing. As a researcher, I thrive on solving complex problems and contributing to advancements in privacy-preserving technologies, with the insights from my personal blogs.",
   // secretDescription: "I like puppies, cats and sexy dance and singing. I also have a secret talent for cooking delicious meals and making people laugh with my terrible jokes. If you want to know more about me, just ask! 😉",
 };
