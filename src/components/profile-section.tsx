@@ -1,3 +1,4 @@
+import Image from "next/image";
 import {
   Github,
   Linkedin,
@@ -7,6 +8,7 @@ import {
   GraduationCap,
 } from "lucide-react";
 import { AboutMe } from "@/data/aboutme";
+import Avatar from "@/public/ava.jpg";
 
 interface ProfileSectionProps {
   aboutMe: AboutMe;
@@ -17,19 +19,16 @@ export function ProfileSection({ aboutMe }: ProfileSectionProps) {
     return null;
   }
 
-  const imageUrl = aboutMe.imageUrl || null;
-
   return (
     <div className="space-y-8">
-      {imageUrl && (
-        <div className="w-full">
-          <img
-            src={imageUrl}
-            alt={aboutMe.name}
-            className="w-full max-w-xs h-auto rounded-xl object-cover"
-          />
-        </div>
-      )}
+      <div className="w-full">
+        <Image
+          src={Avatar}
+          alt={aboutMe.name}
+          className="w-full max-w-xs h-auto rounded-xl object-cover"
+          priority
+        />
+      </div>
       <div className="w-full">
         <h1 className="font-serif text-3xl font-light tracking-wide mb-3">
           {aboutMe.name}
