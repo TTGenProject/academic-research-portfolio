@@ -1,3 +1,6 @@
+'use client';
+
+import { useState, useEffect } from 'react';
 import {
   Github,
   Linkedin,
@@ -5,6 +8,7 @@ import {
   Twitter,
   ArrowUpRight,
   GraduationCap,
+  Download,
 } from "lucide-react";
 import { AboutMe } from "@/data/aboutme";
 
@@ -13,24 +17,41 @@ interface ProfileSectionProps {
 }
 
 export function ProfileSection({ aboutMe }: ProfileSectionProps) {
+  const [imageUrl, setImageUrl] = useState<string | null>(null);
+
+  useEffect(() => {
+    if (aboutMe?.imageUrl) {
+      const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+      setImageUrl(`${basePath}${aboutMe.imageUrl}`);
+    }
+  }, [aboutMe?.imageUrl]);
+
   if (!aboutMe) {
     return null;
   }
 
-  // Construct image URL with basePath for public assets
-  const imageUrl = aboutMe.imageUrl 
-    ? `${process.env.NEXT_PUBLIC_BASE_PATH || ''}${aboutMe.imageUrl}`
-    : null;
-
   return (
     <div className="space-y-8">
       {imageUrl && (
-        <div className="w-full">
+        <div className="w-full space-y-2">
           <img
             src={imageUrl}
             alt={aboutMe.name}
             className="w-full max-w-xs h-auto rounded-xl object-cover"
           />
+          {aboutMe.imageDownloadUrl && (
+            <a
+              href={aboutMe.imageDownloadUrl}
+              download
+              className="group inline-flex items-center gap-2 text-xs text-zinc-500 hover:text-zinc-900 transition-colors duration-300"
+            >
+              <Download
+                size={12}
+                className="group-hover:translate-y-0.5 transition-transform duration-300"
+              />
+              <span className="tracking-wider uppercase">Download</span>
+            </a>
+          )}
         </div>
       )}
       <div className="w-full">

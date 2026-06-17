@@ -7,6 +7,7 @@ export interface AboutMe {
   phone?: string;
   workAddress?: string;
   imageUrl?: string;
+  imageDownloadUrl?: string; // Link to download or view full resolution image
   blogUrl?: string;
   cvUrl?: string;
   googleScholarUrl?: string;
@@ -28,7 +29,8 @@ export const aboutMe: AboutMe = {
   email: "lehuyentrang260802@gmail.com",
   phone: "+84 (0)3 79 44 81 20",
   workAddress: "IBGBI, Université Évry Paris-Saclay, 23, Boulevard de France, 91034 – Évry",
-  imageUrl: "/ava.jpg", 
+  imageUrl: "/ava.jpg",
+  imageDownloadUrl: "/ava.jpg", // Set to download or full-res image URL
   googleScholarUrl: "https://scholar.google.com/citations?user=MD2uJXYAAAAJ&hl=en&authuser=1",
   githubUsername: "hazel260802",
   linkedinUsername: "huyentrang-le",
