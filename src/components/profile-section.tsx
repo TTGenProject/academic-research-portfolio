@@ -18,16 +18,20 @@ export function ProfileSection({ aboutMe }: ProfileSectionProps) {
     return null;
   }
 
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+  const imageUrl = `${basePath}${aboutMe.imageUrl || "/ava.jpg"}`;
+
   return (
     <div className="space-y-8">
       <div className="w-full">
         <Image
-          src="/favicon.ico"
+          src={imageUrl}
           alt={aboutMe.name}
           width={300}
           height={400}
           className="w-full max-w-xs h-auto rounded-xl object-cover"
           priority
+          unoptimized
         />
       </div>
       <div className="w-full">
