@@ -8,7 +8,6 @@ import {
   GraduationCap,
 } from "lucide-react";
 import { AboutMe } from "@/data/aboutme";
-import Avatar from "@/public/ava.jpg";
 
 interface ProfileSectionProps {
   aboutMe: AboutMe;
@@ -23,8 +22,10 @@ export function ProfileSection({ aboutMe }: ProfileSectionProps) {
     <div className="space-y-8">
       <div className="w-full">
         <Image
-          src={Avatar}
+          src="/favicon.ico"
           alt={aboutMe.name}
+          width={300}
+          height={400}
           className="w-full max-w-xs h-auto rounded-xl object-cover"
           priority
         />
