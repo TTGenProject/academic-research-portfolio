@@ -16,7 +16,7 @@ export const newsData: News[] = [
     date: "Sep 2026",
     title: "Best Presentation Award at JDSE 2026",
     description: "Together with Anais Sadoudi, received the Best Presentation Award at the 11th Junior Conference on Data Sciences and Engineering (JDSE 2026), held on 25 September in Orsay, for our joint presentation of \"LLMThings: Experimentation Platform for Language Agents-Based Orchestration of IoT Systems\", co-authored with Massinissa Hamidi (Associate Professor, IBISC, AROBAS team). LLMThings is a platform for designing and evaluating LLM-agent-based orchestration strategies for IoT systems, tested on a real-world sensor deployment.",
-    link: "https://lnkd.in/eMUagPp5",
+    link: "https://www.ibisc.univ-evry.fr/anais-sadoudi-et-huyen-trang-le-recoivent-le-best-presentation-award-a-la-jdse-2026-english-version-below/",
   },
   {
     date: "Jan 2024",
