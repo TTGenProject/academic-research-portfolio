@@ -9,6 +9,13 @@ export interface Portfolio {
 
 export const portfolioData: Portfolio[] = [
   {
+    title: "Zero-Knowledge Smart Contracts for Healthcare IoT Service-Level Agreements",
+    description:
+      "Winning project of the Shaker Genopole challenge (6 months, group leader). A trustless framework for microservice healthcare edge-cloud AIoT deployments where zk-SNARK proofs let service providers demonstrate QoS compliance (access authorization, response time, uptime) without revealing patient data or device identities, and Sui smart contracts autonomously enforce SLA terms, penalties and incentives.",
+    technologies: ["Sui", "Move", "zk-SNARKs", "IoT", "Edge-Cloud"],
+    projectUrl: "https://genopole.agorize.com/web/en/challenges/618/teams/2643/participation",
+  },
+  {
     title: "Secure EHR Data Collection and Transmission Infrastructure",
     description:
       "Designed a secure electronic health record infrastructure integrating medical IoT devices with blockchain-based transmission systems across hospitals, with the incorporation of context-aware access control and privacy protection using Zero-Knowledge Contracts. Implemented a centralized SDN architecture within hospitals for secure ESP32-based IOT device data collection using ONOS controllers in virtualized Mininet WiFi environments.",

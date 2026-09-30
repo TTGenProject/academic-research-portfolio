@@ -7,6 +7,18 @@ export interface News {
 
 export const newsData: News[] = [
   {
+    date: "Sep 2026",
+    title: "Winning Team of the Shaker Genopole Challenge",
+    description: "Led the winning team of the Shaker Genopole challenge, a 6-month project on \"Zero-Knowledge Smart Contracts for Service-Level Agreements in Microservice Healthcare Edge-Cloud AIoT Deployment Applications\", with Huu-Hung Vuong (core developer) under the supervision of Dr. Adnan Imeri and Prof. Nazim Agoulmine (COSMO team, IBISC Laboratory). The project proposes a decentralized, privacy-preserving framework on the Sui blockchain in which zk-SNARK circuits let healthcare IoT service providers cryptographically prove that QoS constraints (access authorization, response time, uptime) are met without revealing sensitive health data or device identities, while smart contracts autonomously enforce SLA conditions, penalties and incentives.",
+    link: "https://genopole.agorize.com/web/en/challenges/618/teams/2643/participation",
+  },
+  {
+    date: "Sep 2026",
+    title: "Best Presentation Award at JDSE 2026",
+    description: "Together with Anais Sadoudi, received the Best Presentation Award at the 11th Junior Conference on Data Sciences and Engineering (JDSE 2026), held on 25 September in Orsay, for our joint presentation of \"LLMThings: Experimentation Platform for Language Agents-Based Orchestration of IoT Systems\", co-authored with Massinissa Hamidi (Associate Professor, IBISC, AROBAS team). LLMThings is a platform for designing and evaluating LLM-agent-based orchestration strategies for IoT systems, tested on a real-world sensor deployment.",
+    link: "https://lnkd.in/eMUagPp5",
+  },
+  {
     date: "Jan 2024",
     title: "Smart & Innovative City (StartupCity) Ambassador",
     description: "Selected as an Ambassador for the StartupCity 2024 competition, an entrepreneurship initiative designed to foster and spread the entrepreneurial mindset among university and college students across Hanoi. The competition aims to promote innovation culture and entrepreneurial thinking by providing participants with opportunities to develop and implement real-world startup ideas in a highly challenging, professional, and creative environment. As an Ambassador, I have contributed to promoting the program and engaging the student community in innovation-driven activities.",

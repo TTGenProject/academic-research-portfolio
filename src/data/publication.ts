@@ -14,6 +14,15 @@ export interface Publication {
 export const publicationData: Publication[] = [
   {
     year: "2026",
+    conference: "11th Junior Conference on Data Sciences and Engineering (JDSE)",
+    title: "LLMThings: Platform for Language Agents-Based Orchestration of IoT Systems",
+    authors: "Anais Sadoudi, Huyen-Trang Le, Massinissa Hamidi",
+    award: "Best Presentation Award",
+    tldr: "In this paper, we describe LLMThings, an experimentation platform dedicated to the study and evaluation of language agents-based orchestration of IoT systems. The platform features a real-world IoT deployment while being modular, flexible, and interactive: it allows users to define (crews of) specialized agents, extend the system with various tools (e.g., devices, APIs, AI models, external services, etc.), run experiments, monitor various metrics of the IoT system in real-time. This makes it a suitable testbed for education, research, and development purposes.",
+    codeUrl: "https://lnkd.in/eXGx-eiy",
+  },
+  {
+    year: "2026",
     conference: "ACM Celebration of Women in Computing (womENcourage)",
     title: "Blockchain-based Trustworthy Genomic Data Sharing Using Zero-Knowledge Proof for Improving Consumer Identity Protection",
     authors: "Huyen-Trang Le, Adnan Imeri, Nazim Agoulmine",

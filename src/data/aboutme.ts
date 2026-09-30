@@ -28,7 +28,7 @@ export const aboutMe: AboutMe = {
   email: "lehuyentrang260802@gmail.com",
   phone: "+84 (0)3 79 44 81 20",
   workAddress: "IBGBI, Université Évry Paris-Saclay, 23, Boulevard de France, 91034 – Évry",
-  imageUrl: "https://6a3295548e8852737b3a116d.imgix.net/ava.jpg?w=800&h=800",
+  imageUrl: "https://6a3295548e8852737b3a116d.imgix.net/ava.jpg?auto=format&fit=fill&w=640",
   googleScholarUrl: "https://scholar.google.com/citations?user=MD2uJXYAAAAJ&hl=en&authuser=1",
   githubUsername: "hazel260802",
   linkedinUsername: "huyentrang-le",
